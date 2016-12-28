@@ -28,10 +28,9 @@ bool call(); //
 
 //
 private:
-uint8_t password(); //
-uint8_t SMS(); //
-uint8_t call(); //
-
+bool password(); //
+bool SMS(); //
+bool call(); //
 };
 
 extern SIM_I2C_class;
