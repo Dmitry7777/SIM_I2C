@@ -30,6 +30,10 @@ void call(); //
 private:
 void password(); //
 void blacklist(); //
+  
+//
+protected:
+bool password(); //
 };
 
 extern SIM_I2Cclass;
