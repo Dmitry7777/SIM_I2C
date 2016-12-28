@@ -14,7 +14,7 @@
 class SIM_I2C{
 //
 public:
-void begin(); //
+void begin(uint8_t Mode); //
 void end(); //
 void print(); //
 void println(); //
@@ -24,13 +24,10 @@ void saveNumber(); //
 void deleteNumber(); //
 void read(); //
 void write(); //
-bool call(); //
+void call(); //
 
 //
 private:
-bool password(); //
-bool SMS(); //
-bool call(); //
+void password(); //
+void blacklist(); //
 };
-
-extern SIM_I2C_class;
