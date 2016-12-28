@@ -18,6 +18,8 @@ void begin(uint8_t Mode); //
 void end(); //
 void print(); //
 void println(); //
+void setClockDivider(); //
+void setDataMode(); //
 void saveMessage(); //
 void deleteMessage(); //
 void saveNumber(); //
