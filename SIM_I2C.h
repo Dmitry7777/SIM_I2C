@@ -14,6 +14,8 @@ class SIM_I2C{
 public:
 void begin(); //
 void end(); //
+void print(); //
+void println(); //
 void save(); //
 void deleteMessage(); //
 void read(); //
@@ -22,9 +24,6 @@ void write(); //
 //
 private:
 
-
-//
-private:
 
 
 };
