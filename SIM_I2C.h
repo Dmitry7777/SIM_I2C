@@ -9,8 +9,6 @@
 #define SIM_I2C_SDA
 #define SIM_I2C_SCL
 
-#endif
-
 class SIM_I2C{
 //
 public:
@@ -33,3 +31,6 @@ private:
 void password(); //
 void blacklist(); //
 };
+
+extern SIM_I2Cclass;
+#endif
