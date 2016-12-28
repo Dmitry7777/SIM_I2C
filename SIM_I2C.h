@@ -1,13 +1,15 @@
-#ifndef SIM_I2C_H
 #define SIM_I2C_H
+#ifndef SIM_I2C_H
 
+//
 #include<Arduino.h>
 #include<SIM_I2C.h>
 
-#ifend;
-
+//
 #define SIM_I2C_SDA
 #define SIM_I2C_SCL
+
+#ifend
 
 class SIM_I2C{
 //
@@ -16,8 +18,10 @@ void begin(); //
 void end(); //
 void print(); //
 void println(); //
-void save(); //
+void saveMessage(); //
 void deleteMessage(); //
+void saveNumber(); //
+void deleteNumber(); //
 void read(); //
 void write(); //
 bool call(); //
