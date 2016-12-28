@@ -9,7 +9,7 @@
 #define SIM_I2C_SDA
 #define SIM_I2C_SCL
 
-#ifend
+#endif
 
 class SIM_I2C{
 //
@@ -33,3 +33,5 @@ uint8_t SMS(); //
 uint8_t call(); //
 
 };
+
+extern SIM_I2C_class
