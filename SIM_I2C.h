@@ -20,10 +20,12 @@ void save(); //
 void deleteMessage(); //
 void read(); //
 void write(); //
+bool call(); //
 
 //
 private:
-
-
+uint8_t password(); //
+uint8_t SMS(); //
+uint8_t call(); //
 
 };
