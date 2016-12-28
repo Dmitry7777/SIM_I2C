@@ -34,4 +34,4 @@ uint8_t call(); //
 
 };
 
-extern SIM_I2C_class
+extern SIM_I2C_class;
