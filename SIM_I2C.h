@@ -4,6 +4,8 @@
 //
 #include<Arduino.h>
 #include<SIM_I2C.h>
+#include"Arduino.h"
+#include"SIM_I2C.h"
 
 //
 #define SIM_I2C_SDA
@@ -12,6 +14,7 @@
 class SIM_I2C{
 //
 public:
+SIM_I2C(uint8_t SIM_I2C_SDA, uint8_t SIM_I2C_SCL); //
 void begin(uint8_t Mode); //
 void end(); //
 void print(); //
@@ -30,7 +33,7 @@ void call(); //
 private:
 void password(); //
 void blacklist(); //
-  
+
 //
 protected:
 bool password(); //
