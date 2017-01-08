@@ -1,3 +1,4 @@
+//
 #define SIM_I2C_H
 #ifndef SIM_I2C_H
 
@@ -33,6 +34,9 @@ void call(); //
 private:
 void password(); //
 void blacklist(); //
+void account(); //
+bool check(); //
+bool verify(); //
 
 //
 protected:
