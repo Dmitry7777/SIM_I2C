@@ -22,6 +22,7 @@ class SIM_Card
   pinMode(SCL, CPU_SIM_CARD_SCL); //
   pinMode(RESET, CPU_SIM_CARD_RESET); //
   shiftOut(SDA, SCL, RESET, PROCESS_ControlSIM_Card); //
+  PROCESS_ControlSIM_Card = shiftIn(SDA, SCL, RESET); //
   }
   void begin(){
     
@@ -55,6 +56,7 @@ class SIM_Card
   }
   
   private:
+  int _PROCESS_ControlSIM_Card; //
   
   protected:
 };
