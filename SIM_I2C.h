@@ -15,20 +15,34 @@
 class SIM_I2C{
 //
 public:
-SIM_I2C(uint8_t SIM_I2C_SDA, uint8_t SIM_I2C_SCL); //
-void begin(uint8_t Mode); //
-void end(); //
-void print(); //
-void println(); //
-void setClockDivider(); //
-void setDataMode(); //
-void saveMessage(); //
-void deleteMessage(); //
-void saveNumber(); //
-void deleteNumber(); //
-void read(); //
-void write(); //
-void call(); //
+SIM_I2C(uint8_t SIM_I2C_SDA, uint8_t SIM_I2C_SCL){
+}; //
+void begin(uint8_t Mode){
+}; //
+void end(){
+}; //
+void print(){
+}; //
+void println(){
+}; //
+void setClockDivider(){
+}; //
+void setDataMode(){
+}; //
+void saveMessage(){
+}; //
+void deleteMessage(){
+}; //
+void saveNumber(){
+}; //
+void deleteNumber(){
+}; //
+void read(){
+}; //
+void write(){
+}; //
+void call(){
+}; //
 
 //
 private:
