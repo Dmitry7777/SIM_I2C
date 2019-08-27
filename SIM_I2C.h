@@ -1,61 +1,62 @@
-//
-#define SIM_I2C_H
-#ifndef SIM_I2C_H
+#ifndef SIM_CARD_H
+#define SIM_CARD_H
 
-//
-#include<Arduino.h>
-#include<SIM_I2C.h>
-#include"Arduino.h"
-#include"SIM_I2C.h"
+#define CPU_SIM_CARD_SDA INPUT
+#define CPU_SIM_CARD_SDA OUTPUT
+#define CPU_SIM_CARD_SCL OUTPUT
+#define CPU_SIM_CARD_RESET OUTPUT
 
-//
-#define SIM_I2C_SDA
-#define SIM_I2C_SCL
+int PROCESS_SIM_CARD_SDA; //
+int PROCESS_SIM_CARD_SCL; //
+int PROCESS_SIM_CARD_RESET; //
+int PROCESS_ControlSIM_Card; //
 
-class SIM_I2C{
-//
-public:
-SIM_I2C(uint8_t SIM_I2C_SDA, uint8_t SIM_I2C_SCL){
-}; //
-void begin(uint8_t Mode){
-}; //
-void end(){
-}; //
-void print(){
-}; //
-void println(){
-}; //
-void setClockDivider(){
-}; //
-void setDataMode(){
-}; //
-void saveMessage(){
-}; //
-void deleteMessage(){
-}; //
-void saveNumber(){
-}; //
-void deleteNumber(){
-}; //
-void read(){
-}; //
-void write(){
-}; //
-void call(){
-}; //
-
-//
-private:
-void password(); //
-void blacklist(); //
-void account(); //
-bool check(); //
-bool verify(); //
-
-//
-protected:
-bool password(); //
+class SIM_Card
+{
+  public:
+  SIM_Card(uint16_t SDA, uint16_t SCL, uint16_t RESET){
+  PROCESS_SIM_CARD_SDA = SDA; //
+  PROCESS_SIM_CARD_SCL = SCL; //
+  PROCESS_SIM_CARD_RESET = RESET; //
+  pinMode(SDA, CPU_SIM_CARD_SDA); //
+  pinMode(SCL, CPU_SIM_CARD_SCL); //
+  pinMode(RESET, CPU_SIM_CARD_RESET); //
+  shiftOut(SDA, SCL, RESET, PROCESS_ControlSIM_Card); //
+  }
+  void begin(){
+    
+  }
+  void end(){
+    
+  }
+  void read(){
+    
+  }
+  void write(){
+    
+  }
+  void receive(){
+    
+  }
+  void send(){
+    
+  }
+  void isSent(){
+    
+  }
+  void call(){
+    
+  }
+  void SavingSMS(){
+    
+  }
+  void MemorySize(){
+    
+  }
+  
+  private:
+  
+  protected:
 };
 
-extern SIM_I2Cclass;
 #endif
